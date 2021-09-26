@@ -1,4 +1,4 @@
-# Gated Transformers File Structures Implementation
+# Gated Transformers File Structure Implementation
 - For more details in the logistic of the Gated Transformers XL, please visit the paper [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764).
 - All the codes below have been commented.
 - ![alt text](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/imgs/gated_transformers.png)
