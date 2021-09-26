@@ -20,8 +20,12 @@
 ### 1/ Sequence to Sequence Learning with Neural Networks
 - Architecture: LSTM.
 - Paper: [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215).
-- [Code]().
+- [Code](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/seq2seq_nlp/seq2seq_with_nn).
 - Credit: Ben Trevett.
+```
+python ./main.py
+python ./test_model.py
+```
 
 ### 2/ Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation
 - Architecture: RNN, GRU.
