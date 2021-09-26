@@ -1,19 +1,32 @@
 # Gated Transformers File Structures Implementation
-- For more details in the logistic of the Gated Transformers XL, please visit the paper [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764)
+- For more details in the logistic of the Gated Transformers XL, please visit the paper [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764).
 - All the codes below have been commented.
 - ![alt text](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/imgs/gated_transformers.png)
-### File structure is in [gated_transformers_nlp/src/gated_transformers_nlp/](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp)
+## File structure is in [gated_transformers_nlp/src/gated_transformers_nlp/](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp)
 - [utils/gated_transformers/preprocess.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/preprocess.py)
-    - 
-- [utils/gated_transformers/decoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/decoder.py)
-    - 
+    - Script preprocesses the translation German-English dataset by tokenizing, and splitting the dataset into training, validating, and testing dataset.
 - [utils/gated_transformers/encoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/encoder.py)
-    - 
+    - Layer Normalization.
+    - Multi-Head Attention Layer.
+    - Gated Layer.
+    - Positionwise Feedforward Layer.
+    - Gated Encoder Layer = Layer Norm + Multi-Head Attention + Gated Layer + Layer Norm + Positionwise Feedforward + Gated Layer + Dropout.
+    - Encoder Layer(s) = Take in tokenized input data, allow to generate N number of Gated Encoder Layer block(s).
+- [utils/gated_transformers/decoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/decoder.py)
+    - Layer Normalization.
+    - Multi-Head Attention Layer.
+    - Gated Layer.
+    - Positionwise Feedforward Layer.
+    - Gated Decoder Layer = Layer Norm + Multi-Head Attention + Gated Layer + Layer Norm + Positionwise Feedforward + Gated Layer + Layer Norm + Positionwise Feedforward + Gated Layer + Dropout.
+    - Decoder Layer(s) = Take in tokenized Encoder Layer's outputs & tokenized labels, allow to generate N number of Gated Decoder Layer block(s).
+
 - [utils/gated_transformers/seq2seq.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/seq2seq.py)
-    - 
+    - Combine both Encoder Layer(s) and Decoder Layer(s) to create a Sequence to Sequence model.
 - [utils/gated_transformers/training_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/training_utils.py)
-    -
+    - Generate 3 Encoder Layers and 3 Decoder Layers, then train the Sequence to Sequence model with the German-English Torchtext Dataset. 
+    - Validate the trained model.
+    - Save the trained model.
 - [utils/gated_transformers/testing_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/testing_utils.py)
-    - 
+    - Load the trained model, then test it with testing dataset.
 - [nlp_transformers_test.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/nlp_transformers_test.py)
     - Pytest script that trains, validate, and test both original Transformers and Gated Transformers.
