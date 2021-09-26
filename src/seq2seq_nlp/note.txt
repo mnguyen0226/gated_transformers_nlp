@@ -1,0 +1,39 @@
+REOURCES: https://github.com/bentrevett/pytorch-seq2seq
+
+Note 1: sequence to sequence learning with nn
+- Cover the basic workflow of pytorch with torchtext seq2seq.
+- The seq2seq will use encode-decider model
+- Paper: https://arxiv.org/abs/1409.3215
+- This use multi-layer LSTMs
+
+Note 2: learning phrase representations using rnn encoder-decoder for statistical machine translation
+- Imrpove the result.
+- Use GRU
+- Paper: https://arxiv.org/abs/1406.1078
+
+Note 3: Neural Machine Translation by Jointly Learning to Aligbn and Tranlate
+- Paper: https://arxiv.org/abs/1409.0473
+- Solve the problem of info compression by allowing the decoder to look back at the input sentenceby creating context vectors that are weighed sums of the encoder hidden states. 
+- The weigh ted sum are calculated via attention mechanism where the decoder learns to pay attention to more relevant words in te input sentences
+
+Note 4: Packed Padded Sequences, Masking, Inference and BLUE
+- Improve the previous medl architecture by adding packed padded sequences and masking
+- packed padded sequences allo us to only process the non-padded elements  of our input sentence with out RNN
+- Masking is used to force the model to ignore ccertain elements we do not want it to look at, such as attention over padded elements => Small boost
+- Also show how to calculate the BLEU metric from out translation
+
+Note 5: Convolutional Sequence to Sequence Learning:
+- Not using RNN based model bu fuly convolutional
+- Meaning that before a word is processed by RNN, all previous words must be processed
+- Convolutionssl models can be fulley parallized  which allow them to br trained much quickers
+- paper: https://arxiv.org/abs/1705.03122
+- the Convolutional Sequence to sequence model use multiple convolutional layers in bot h encoder and decoder with attention mechanism between them
+
+Note 6: Attention is all you need
+- Paper: https://arxiv.org/abs/1706.03762
+- implement the Transfomer, which is based soley on attention mechanisms and introduces Mult-head atention.
+The encoder and decoder are made of multiple layer, with each layer consisting of Multihead attention and Positionwise Feedforward sublayers.
+- This model is currently used in many state-of-the-art sequence-to-sequence and transfer learning tasks.
+
+
+
