@@ -6,7 +6,7 @@
 ### 1/ Gated Transformers XL - Stabilizing Transformers for Reinforcement Learning
 - ![alt text](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/imgs/gated_transformers.png)
 - Architecture: Attention, GRU, Transformers XL.
-- Paper: [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.067640).
+- Paper: [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764).
 - [Code](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp/utils/gated_transformers).
 - [Explanation]().
 ```
