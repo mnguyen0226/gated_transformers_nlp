@@ -2,12 +2,18 @@
 - For more details in the logistic of the Gated Transformers XL, please visit the paper [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764)
 - All the codes below have been commented.
 - ![alt text](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/imgs/gated_transformers.png)
-- File structure is in [gated_transformers_nlp/src/gated_transformers_nlp/](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp)
-    - [nlp_transformers_test.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/nlp_transformers_test.py)
-        - 
-    - [utils/gated_transformers/decoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/decoder.py)
-    - [utils/gated_transformers/encoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/encoder.py)
-    - [utils/gated_transformers/preprocess.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/preprocess.py)
-    - [utils/gated_transformers/seq2seq.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/seq2seq.py)
-    - [utils/gated_transformers/testing_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/testing_utils.py)
-    - [utils/gated_transformers/training_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/training_utils.py)
+### File structure is in [gated_transformers_nlp/src/gated_transformers_nlp/](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp)
+- [utils/gated_transformers/preprocess.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/preprocess.py)
+    - 
+- [utils/gated_transformers/decoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/decoder.py)
+    - 
+- [utils/gated_transformers/encoder.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/encoder.py)
+    - 
+- [utils/gated_transformers/seq2seq.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/seq2seq.py)
+    - 
+- [utils/gated_transformers/training_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/training_utils.py)
+    -
+- [utils/gated_transformers/testing_utils.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/utils/gated_transformers/testing_utils.py)
+    - 
+- [nlp_transformers_test.py](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/nlp_transformers_test.py)
+    - Pytest script that trains, validate, and test both original Transformers and Gated Transformers.
