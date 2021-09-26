@@ -8,7 +8,7 @@
 - Architecture: Attention, GRU, Transformers XL.
 - Paper: [Stabilizing Transformers for Reinforcement Learning](https://arxiv.org/abs/1910.06764).
 - [Code](https://github.com/mnguyen0226/gated_transformers_nlp/tree/main/src/gated_transformers_nlp/utils/gated_transformers).
-- [Explanation]().
+- [Explanation](https://github.com/mnguyen0226/gated_transformers_nlp/blob/main/src/gated_transformers_nlp/gated_transformer_explanation.md).
 ```
 python ./nlp_transformers_test.py
 ```
